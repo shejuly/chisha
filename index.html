@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cn_zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>吃啥</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen" />
+  <link href="./index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="mainHeader">吃啥啊?</header>
+<div id="container">
+  <div class="page page1">
+    <section>
+      <div class="showFootPlace">盘子</div>
+      <div class="mainBtn">roll一下</div>
+    </section>
+  </div>
+  <div class="page page2">
+    <nav class="leftBar">
+      <div class="inputLine">
+        <span class="leftText">id</span>
+        <input class="rightInput idName" type="text" placeholder="必填">
+      </div>
+      <div class="inputLine">
+        <span class="leftText">名称</span>
+        <input class="rightInput foodName" type="text" placeholder="非必须">
+      </div>
+      <div class="inputLine">
+        <span class="leftText">导入json</span>
+        <input class="rightInput json" type="text" placeholder="非必须">
+      </div>
+      <div class="btn addOneBtn">
+        确定
+      </div>
+    </nav>
+    <section>
+      <div class="listPlaceHeader">
+        <span>id</span>
+        <span>食物名称</span>
+      </div>
+      <ul class="listPlace">
+      </ul>
+    </section>
+  </div>
+</div>
+<footer class="mainFooter">
+  <div class="switcher">
+    <div class="switchItem active"></div>
+    <div class="switchItem"></div>
+  </div>
+</footer>
+<script src="./jquery-3.3.1.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
