@@ -131,6 +131,7 @@ $('.addOneBtn').on('click', function () {
   var json = $('.page2 .leftBar .json').val();
   if (json){
     mainArr = JSON.parse(json);
+    localStorage.mainArr = json;
     return;
   }
   var obj = {
